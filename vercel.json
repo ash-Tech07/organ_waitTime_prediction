@@ -1,14 +1,14 @@
 {
     "builds": [
         {
-            "src":"api/priority_prediction.py",
+            "src":"api/kidney_transplant_waiting_time_prediction.py",
             "use":"@vercel/python"
         }
     ],
     "routes":[
         {
             "src":"/(.*)",
-            "dest":"api/priority_prediction.py"
+            "dest":"api/kidney_transplant_waiting_time_prediction.py"
         }
     ]
 }
