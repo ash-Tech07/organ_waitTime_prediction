@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src":"api/priority_prediction.py",
+            "use":"@vercel/python"
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"api/priority_prediction.py"
+        }
+    ]
+}
